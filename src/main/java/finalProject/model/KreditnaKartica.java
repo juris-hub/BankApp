@@ -16,18 +16,18 @@ import javax.persistence.Entity;
 @Entity
 public class KreditnaKartica extends Entitet {
     
-    private Date vrijediOdDo;
+    private boolean validna;
     private BigDecimal limit;
     private String broj;
     private String vrsta;
     private String kontrolniBroj;
 
-    public Date getVrijediOdDo() {
-        return vrijediOdDo;
+    public boolean isValidna() {
+        return validna;
     }
 
-    public void setVrijediOdDo(Date vrijediOdDo) {
-        this.vrijediOdDo = vrijediOdDo;
+    public void setValidna(boolean validna) {
+        this.validna = validna;
     }
 
     public BigDecimal getLimit() {

@@ -8,6 +8,7 @@ package finalProject.model;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -17,26 +18,15 @@ public class PoslovnicaBanke {
     
     private String adresa;
     private String oibPoslovnice;
-    
-    @ManyToMany
-    private List<Racun> racuni = new ArrayList<>();
-    @ManyToMany
-    private List<KreditnaKartica> kreditneKartice = new ArrayList<>();
+    @ManyToOne
+    private KreditnaKartica kreditnaKartica;
 
-    public List<Racun> getRacuni() {
-        return racuni;
+    public KreditnaKartica getKreditnaKartica() {
+        return kreditnaKartica;
     }
 
-    public void setRacuni(List<Racun> racuni) {
-        this.racuni = racuni;
-    }
-
-    public List<KreditnaKartica> getKreditneKartice() {
-        return kreditneKartice;
-    }
-
-    public void setKreditneKartice(List<KreditnaKartica> kreditneKartice) {
-        this.kreditneKartice = kreditneKartice;
+    public void setKreditnaKartica(KreditnaKartica kreditnaKartica) {
+        this.kreditnaKartica = kreditnaKartica;
     }
     
     public String getAdresa() {

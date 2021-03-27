@@ -9,7 +9,7 @@
     <session-factory>
         <!-- JDBC Database connection settings -->
         <property name="connection.driver_class">com.mariadb.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mariadb://localhost:3306/finalProject</property>
+        <property name="connection.url">jdbc:mariadb://localhost:3306/Zavrsni_hib</property>
         <property name="connection.username">edunova</property>
         <property name="connection.password">edunova</property>
         <!-- JDBC connection pool settings ... using built-in test pool -->
@@ -34,7 +34,7 @@
          <!-- Mapiranje klasa  -->
          
          <mapping class="finalProject.model.Banka" />
-         <mapping class="finalProject.model.Osoba>" /> 
+         <mapping class="finalProject.model.Klijent>" /> 
          <mapping class="finalProject.model.KreditnaKartica>" />
          <mapping class="finalProject.model.Racun>" />
          <mapping class="finalProject.model.PoslovnicaBanke>" />

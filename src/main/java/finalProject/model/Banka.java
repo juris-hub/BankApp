@@ -7,6 +7,7 @@ package finalProject.model;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
 
 /**
  *
@@ -14,9 +15,11 @@ import javax.persistence.ManyToOne;
  */
 @Entity
 public class Banka extends Entitet{
-    
+    @NotNull
     private String ime;
+    @NotNull
     private String adresa;
+    @NotNull
     @ManyToOne
     private PoslovnicaBanke PoslovnicaBanke;
 

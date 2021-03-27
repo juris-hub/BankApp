@@ -18,37 +18,20 @@ import javax.persistence.ManyToMany;
  * @author Zver
  */
 @Entity
-public class Osoba extends Entitet {
-    
+public class Klijent extends Entitet {
+    @NotNull
     private String ime;
+    @NotNull
     private String prezime;
     @NotNull
     @NotEmpty
     @Email(message = "Email nije ispravan")
     private String email;
+    @NotNull
     private String oib;
+    @NotNull
     private String brojTelefona;
-    @ManyToMany
-    private List<Racun> racuni = new ArrayList<>();
-    @ManyToMany
-    private List<KreditnaKartica> kreditneKartice = new ArrayList<>();
-
-    public List<Racun> getRacuni() {
-        return racuni;
-    }
-
-    public void setRacuni(List<Racun> racuni) {
-        this.racuni = racuni;
-    }
-
-    public List<KreditnaKartica> getKreditneKartice() {
-        return kreditneKartice;
-    }
-
-    public void setKreditneKartice(List<KreditnaKartica> kreditneKartice) {
-        this.kreditneKartice = kreditneKartice;
-    }
-
+   
     public String getBrojTelefona() {
         return brojTelefona;
     }

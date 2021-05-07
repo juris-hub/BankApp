@@ -6,12 +6,14 @@
 package finalProject.model;
 
 import java.math.BigDecimal;
+import javax.persistence.Entity;
 
 /**
  *
  * @author Zver
  */
-public class Racun {
+@Entity
+public class Racun extends Entitet{
     
     private String broj;
     private String vrsta;

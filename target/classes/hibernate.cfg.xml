@@ -34,10 +34,12 @@
          <!-- Mapiranje klasa  -->
          
          <mapping class="finalProject.model.Banka" />
-         <mapping class="finalProject.model.Klijent>" /> 
-         <mapping class="finalProject.model.KreditnaKartica>" />
-         <mapping class="finalProject.model.Racun>" />
-         <mapping class="finalProject.model.PoslovnicaBanke>" />
+         <mapping class="finalProject.model.Klijent" /> 
+         <mapping class="finalProject.model.KreditnaKartica" />
+         <mapping class="finalProject.model.Racun" />
+         <mapping class="finalProject.model.PoslovnicaBanke" />
+         <mapping class="finalProject.model.Klijent_KreditnaKartica" />
+         <mapping class="finalProject.model.Klijent_Racun" />
          
     </session-factory>
 </hibernate-configuration>

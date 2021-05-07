@@ -14,12 +14,13 @@ import javax.persistence.ManyToOne;
  *
  * @author Zver
  */
-public class PoslovnicaBanke {
+public class PoslovnicaBanke extends Entitet {
     
     private String adresa;
     private String oibPoslovnice;
     @ManyToOne
     private KreditnaKartica kreditnaKartica;
+    private Racun racun;
 
     public KreditnaKartica getKreditnaKartica() {
         return kreditnaKartica;
